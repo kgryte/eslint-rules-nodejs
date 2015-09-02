@@ -1,0 +1,58 @@
+{
+  "name": "eslint-rules-nodejs",
+  "version": "0.0.0",
+  "description": "ESLint rules specific to running JavaScript on Node.js.",
+  "author": {
+    "name": "Athan Reines",
+    "email": "kgryte@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "mocha",
+    "test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+    "codecov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/codecov/coverage --report lcovonly -- -R spec && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kgryte/eslint-rules-nodejs.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "javascript",
+    "js",
+    "style",
+    "guide",
+    "styleguide",
+    "syntax",
+    "lint",
+    "jshint",
+    "jslint",
+    "code",
+    "policy",
+    "quality",
+    "standard",
+    "rules",
+    "env",
+    "nodejs"
+  ],
+  "bugs": {
+    "url": "https://github.com/kgryte/eslint-rules-nodejs/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "3.x.x",
+    "codecov.io": "^0.1.5",
+    "istanbul": "^0.3.0",
+    "mocha": "2.x.x",
+    "utils-merge2": "^1.0.0"
+  },
+  "license": "MIT"
+}
