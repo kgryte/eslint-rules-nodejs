@@ -1,6 +1,6 @@
 {
   "name": "eslint-rules-nodejs",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "ESLint rules specific to running JavaScript on Node.js.",
   "author": {
     "name": "Athan Reines",
